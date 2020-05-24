@@ -1,5 +1,6 @@
 # backupToZip
-A simple command line zip and unzip program using python. Based on code from "Automate the Boring Stuff With Python" by Al Sweigart
+A simple command line zip and unzip program using python. 
+Based on code from "Automate the Boring Stuff With Python" by Al Sweigart
 
 ## Usage
 To use the .bat file command line functionality you will need to add the folder you have it in to your "Path" environment variable.
