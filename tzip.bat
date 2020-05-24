@@ -1,0 +1,1 @@
+@py.exe "%~dp0Code\backupToZip.py" %*
