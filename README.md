@@ -14,6 +14,7 @@ tzip unzip [folder name] - unzips that folder
 * Added command line functionality via .bat file
 * Added error checking for nonexistent folder names
 * Added functionality for unzipping files (Sweigart's only had zipping mechanisms)
+* Added use of a compression algorithm 
 
 ## Future updates
 * Ability to choose file destinations (currently only outputs to working directory)
