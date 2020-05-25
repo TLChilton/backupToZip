@@ -37,7 +37,7 @@ def backupToZip(folder):
                     newBase = os.path.basename(folder) + '_'
                     if filename.startswith(newBase) and filename.endswith('.zip'):
                         continue  # don't back up the backup ZIP files
-                    backupZip.write(os.path.join(foldername, filename))
+                    backupZip.write(os.path.join(foldername, filename), compress_type=zipfile.ZIP_DEFLATED)
             backupZip.close
             print('Done.')
     else:
