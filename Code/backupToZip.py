@@ -1,10 +1,7 @@
 #! python3
 # backupToZip.py - Allows command line zipping and unzipping of folders
 
-import zipfile
-import os
-import sys
-import re
+import zipfile, os, sys, re, zlib
 
 # Handles zipping files
 def backupToZip(folder):
