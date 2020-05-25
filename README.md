@@ -16,6 +16,5 @@ tzip unzip [folder name] - unzips that folder
 * Added functionality for unzipping files (Sweigart's only had zipping mechanisms)
 
 ## Future updates
-* Absolute path compatibility (currently only accepts relative paths)
 * Ability to choose file destinations (currently only outputs to working directory)
 
