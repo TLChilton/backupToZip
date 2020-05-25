@@ -1,6 +1,5 @@
 #! python3
-# backupToZip.py - Copies an entire folder and its contents into
-# a zip file whose filename increments.
+# backupToZip.py - Allows command line zipping and unzipping of folders
 
 import zipfile
 import os
@@ -56,11 +55,12 @@ def unZipFolder(folder):
         newName = folderName + "_unzipped"
 
         # Check for if an unzipped folder by our name already exists
+        # If it does exist an incremented name is created
         number = 1
         while True:
             if not os.path.exists(newName):
                 break
-            newName = folderName + '_unzipped_' + str(number)
+            newName = folderName + '_unzipped_' + str(number) 
             number = number + 1
 
         print("Unzipping to %s..." % newName)
