@@ -7,7 +7,7 @@ import os
 import sys
 import re
 
-
+# Handles zipping files
 def backupToZip(folder):
     # Back up the entire contents of "folder" into a ZIP file.
 
@@ -44,16 +44,18 @@ def backupToZip(folder):
     else:
         print ("ERROR: %s does not exist" % folder)
 
+# Handles unzipping files
 def unZipFolder(folder):
     filePattern = re.compile(r"^(.*)(.zip)$", re.VERBOSE)
 
-    folder = os.path.abspath(folder)
+    folder = os.path.abspath(folder)    # Convert the inputted path to an absolute path
     if os.path.exists(folder):
         mo = filePattern.search(folder)
-        folderName = mo.group(1)
+        folderName = mo.group(1)        # We don't want the .zip extension
 
         newName = folderName + "_unzipped"
 
+        # Check for if an unzipped folder by our name already exists
         number = 1
         while True:
             if not os.path.exists(newName):
@@ -69,6 +71,7 @@ def unZipFolder(folder):
     else:
         print ("ERROR: %s does not exist" % folder)
 
+# Main, handles the command line arguments
 if len(sys.argv) == 2:
     backupToZip(sys.argv[1])
     sys.exit()
