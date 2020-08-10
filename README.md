@@ -6,8 +6,11 @@ Based on code from "Automate the Boring Stuff With Python" by Al Sweigart @aswei
 To use the .bat file command line functionality you will need to add the folder you have it in to your "Path" environment variable.
 
 Commands:
+
 tzip                     - displays usage information
+
 tzip [folder name]       - compresses that folder
+
 tzip unzip [folder name] - unzips that folder
 
 ## What I added
