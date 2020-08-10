@@ -1,1 +1,1 @@
-@py.exe "%~dp0Code\backupToZip.py" %*
+@py.exe "%~dp0\Code\backupToZip.py" %*
